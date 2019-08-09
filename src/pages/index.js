@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import Image from "../components/image";
@@ -10,7 +9,7 @@ import Navbar from "../components/navbar";
 import OldHeader from "../components/old-header";
 import Main from "../components/main";
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
     <div>
         <Navbar />
         <OldHeader />
@@ -19,19 +18,3 @@ const IndexPage = ({ data }) => (
 );
 
 export default IndexPage;
-
-export const query = graphql`
-    {
-        contentfulHeader {
-            name
-            introduction {
-                content {
-                    content {
-                        nodeType
-                        value
-                    }
-                }
-            }
-        }
-    }
-`;
