@@ -26,6 +26,7 @@ const Introduction = () => {
         opacity: "0.6",
         zIndex: "-1",
         backgroundAttachment: "fixed",
+        backgroundSize: "cover",
     };
 
     return (
