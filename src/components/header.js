@@ -43,7 +43,7 @@ const Header = () => {
             </div>
 
             <div>
-                <h1>Dean Phan</h1>
+                <h1>Dean Phan Pro</h1>
             </div>
 
             <div>
