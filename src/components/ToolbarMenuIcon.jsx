@@ -22,6 +22,7 @@ class ToolbarMenuIcon extends React.Component {
         };
         this.handleMenu = this.handleMenu.bind(this);
     }
+
     handleMenu = event => {
         this.setState({ anchorEl: event.currentTarget });
     };

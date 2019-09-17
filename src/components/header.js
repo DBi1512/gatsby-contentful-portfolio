@@ -47,7 +47,7 @@ const Header = () => {
             </div>
 
             <div>
-                <a href="https://www.integrify.fi/" target="_blank">
+                <a href="https://www.integrify.fi/">
                     <Img
                         className="logo integrify-logo"
                         fluid={data.contentfulHeader.logo.fluid}

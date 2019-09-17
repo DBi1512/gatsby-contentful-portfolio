@@ -16,7 +16,7 @@ const Projects = () => (
                     <h2>Think Tank United</h2>
                     <p>Final project from Integrify for real company</p>
                     <div className="project-buttons">
-                        <a className="website-button" href="https://ttu-develop.netlify.com/" target="_blank">
+                        <a className="website-button" href="https://ttu-develop.netlify.com/">
                             Check out TTU project
                         </a>
                     </div>
@@ -32,10 +32,10 @@ const Projects = () => (
                         back-end.
                     </p>
                     <div className="project-buttons">
-                        <a className="website-button" href="https://github.com/DBi1512/demo-day" target="_blank">
+                        <a className="website-button" href="https://github.com/DBi1512/demo-day">
                             Github
                         </a>
-                        <a className="website-button" href="https://finlary.netlify.com/" target="_blank">
+                        <a className="website-button" href="https://finlary.netlify.com/">
                             Demo
                         </a>
                     </div>
@@ -47,18 +47,10 @@ const Projects = () => (
                     <h2>Countries of the World</h2>
                     <p>RestAPI showing all the countries in the World. Learning Array Object.</p>
                     <div className="project-buttons">
-                        <a
-                            className="website-button"
-                            href="https://github.com/DBi1512/Array-Countries-Object"
-                            target="_blank"
-                        >
+                        <a className="website-button" href="https://github.com/DBi1512/Array-Countries-Object">
                             Github
                         </a>
-                        <a
-                            className="website-button"
-                            href="https://dbi1512.github.io/Array-Countries-Object/"
-                            target="_blank"
-                        >
+                        <a className="website-button" href="https://dbi1512.github.io/Array-Countries-Object/">
                             Demo
                         </a>
                     </div>
@@ -67,25 +59,17 @@ const Projects = () => (
 
             <div className="project">
                 <div className="project-detail">
-                    <img src={Wayne} alt="Wayne's The Dealer Photo" />
+                    <img src={Wayne} alt="Wayne's The Dealer" />
                     <h2>Wayne's The Dealer</h2>
                     <p>
-                        This unfinished website is a different direction before I joined Integrify. From which I
-                        learned what is Wordpress and Php
+                        This unfinished website is a different direction before I joined Integrify. From which I learned
+                        what is Wordpress and Php
                     </p>
                     <div className="project-buttons">
-                        <a
-                            className="website-button"
-                            href="https://github.com/DBi1512/wayneTheDealer"
-                            target="_blank"
-                        >
+                        <a className="website-button" href="https://github.com/DBi1512/wayneTheDealer">
                             Github
                         </a>
-                        <a
-                            className="website-button"
-                            href="https://dbi1512.github.io/wayneTheDealer/index.html"
-                            target="_blank"
-                        >
+                        <a className="website-button" href="https://dbi1512.github.io/wayneTheDealer/index.html">
                             Demo
                         </a>
                     </div>
@@ -97,22 +81,14 @@ const Projects = () => (
                     <img src={Aquarium} alt="aquarium" />
                     <h2>Practice Aquarium Zen</h2>
                     <p>
-                        This is my first ever made website based on the real website after learning how to show
-                        "Hello World"
+                        This is my first ever made website based on the real website after learning how to show "Hello
+                        World"
                     </p>
                     <div className="project-buttons">
-                        <a
-                            className="website-button"
-                            href="https://github.com/DBi1512/PracticeAquariumZen.github.io"
-                            target="_blank"
-                        >
+                        <a className="website-button" href="https://github.com/DBi1512/PracticeAquariumZen.github.io">
                             Github
                         </a>
-                        <a
-                            className="website-button"
-                            href="https://dbi1512.github.io/PracticeAquariumZen.github.io/"
-                            target="_blank"
-                        >
+                        <a className="website-button" href="https://dbi1512.github.io/PracticeAquariumZen.github.io/">
                             Demo
                         </a>
                     </div>
@@ -120,7 +96,6 @@ const Projects = () => (
             </div>
         </div>
     </section>
-  
 );
 
 export default Projects;
