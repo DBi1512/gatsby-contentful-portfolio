@@ -8,7 +8,7 @@ import React from "react";
 import "../components/index.css";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import HelmetComponent from "../components/Helmet";
-import Header from "../components/Header";
+import Header from "../components/header";
 import Main from "../components/main";
 import AppBarCollapse from "../components/navbar";
 
