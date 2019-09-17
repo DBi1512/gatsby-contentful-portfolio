@@ -11,27 +11,14 @@ const Introduction = () => {
                     introduction {
                         json
                     }
-                    background {
-                        file {
-                            url
-                        }
-                    }
                 }
             }
         `,
     );
 
-    const backgroundStyle = {
-        backgroundImage: `url("${contentfulIntroduction.background.file.url}")`,
-        opacity: "0.6",
-        zIndex: "-1",
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-    };
-
     return (
         <div>
-            <section id="introduction" style={backgroundStyle}>
+            <section id="introduction">
                 <div className="container">{documentToReactComponents(contentfulIntroduction.introduction.json)}</div>
             </section>
         </div>

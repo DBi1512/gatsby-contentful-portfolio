@@ -1,0 +1,139 @@
+.Nav {
+    color: black !important;
+    background-color: white !important;
+    border: none;
+    box-shadow: none !important;
+    text-align: center;
+}
+
+.Nav___open {
+    height: 100vh;
+}
+
+.Nav_box {
+    display: flex;
+}
+
+.Nav_center___closed {
+    display: none;
+}
+
+.Nav_center___open {
+    display: flex;
+    flex-direction: column;
+}
+
+.Nav_button {
+    background-color: var(--blue--TTU);
+    border: none;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    outline: none;
+}
+
+.Nav_logo {
+    width: 100%;
+}
+
+.Nav_link {
+    color: var(--blue--TTU);
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.Nav_link___right {
+    font-size: 16px; /* approximately 1rem divided by the square root of the golden ratio */
+    line-height: 1rem;
+}
+
+/* Adapted from hover.css */
+
+.hvr-outline-out___nav {
+    border-radius: 4px;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: border-radius;
+    transition-timing-function: linear;
+}
+
+.hvr-outline-out___nav:hover,
+.hvr-outline-out___nav:focus,
+.hvr-outline-out___nav:active {
+    border-radius: 0;
+}
+
+.hvr-outline-out___nav:before {
+    content: "";
+    border: var(--blue--TTU) solid 3px;
+    border-radius: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.3s;
+    transition-property: opacity, top, right, bottom, left;
+    transition-timing-function: linear;
+}
+
+.hvr-outline-out___nav:hover:before,
+.hvr-outline-out___nav:focus:before,
+.hvr-outline-out___nav:active:before {
+    opacity: 1;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+}
+
+.hvr-underline-out___nav {
+    display: inline-block;
+    outline: none;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+}
+
+.hvr-underline-out___nav:before {
+    content: "";
+    border-bottom: var(--blue--TTU) solid 2px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.3s;
+    transition-property: opacity, bottom;
+    transition-timing-function: ease-in-out;
+}
+
+.hvr-underline-out___nav:hover:before,
+.hvr-underline-out___nav:focus:before,
+.hvr-underline-out___nav:active:before {
+    opacity: 1;
+    bottom: -4px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.user-icon {
+    color: var(--blue--TTU);
+    font-size: 1.2rem;
+}
+
+a .anchor {
+    display: block;
+    position: relative;
+    top: -64px;
+    visibility: hidden;
+    color: black;
+}
