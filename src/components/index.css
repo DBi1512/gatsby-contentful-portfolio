@@ -394,76 +394,13 @@ td {
     background-color: #79b044;
 }
 
-/* ====== Resources ====== */
-
-#resources {
-    margin-top: 50px;
-    padding-top: 70px;
-    height: 200px;
-}
-
-.my-resources {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 30px 0 60px 0;
-}
-
-.my-resources p {
-    width: 60%;
-    margin: auto;
-    padding-bottom: 60px;
-}
-
-.medium {
-    border-left: 6px solid #000000;
-}
-
-.w3schools {
-    border-left: 6px solid #84c302;
-}
-
-.stackoverflow {
-    border-left: 6px solid #f48024;
-}
-
-.resource {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 60%;
-    margin-left: 20px;
-    margin: auto;
-    margin-bottom: 10px;
-}
-
-.resource a:hover {
-    opacity: 0.6;
-}
-
-.resource img {
-    max-width: 200px;
-}
-
-.resource p {
-    max-width: 800px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: left;
-}
-
 /* ====== Contact ====== */
 
 #contact {
-    margin-top: 50px;
-    padding-top: 70px;
-    height: 200px;
-}
-
-.contact-information p {
-    padding: 30px 10px;
+    margin-top: 30px;
+    padding-top: 60px;
+    /* height: 200px; */
+    background-color: #ffffff;
 }
 
 .contact-information {
@@ -485,8 +422,8 @@ form {
 }
 
 .personal-information {
-    width: 45%;
-    min-width: 300px;
+    width: 95%;
+    min-width: 200px;
     padding: 10px;
     margin: 0 20px 20px 20px;
     font-size: 1em;
@@ -505,7 +442,7 @@ form {
 
 .comment-button {
     float: right;
-    margin: 0 30px 20px 0;
+    margin: 0 10px 20px 0;
     padding: 10px;
     font-size: 0.9em;
     color: white;
@@ -733,8 +670,16 @@ footer h4 a:hover {
         padding-bottom: 10px;
     }
 
+    .project-detail {
+        width: 100%;
+    }
+
     #contact {
         margin-top: 130px;
+    }
+
+    form {
+        width: 100%;
     }
 }
 

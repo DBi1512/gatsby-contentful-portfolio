@@ -11,6 +11,7 @@ import HelmetComponent from "../components/Helmet";
 import Header from "../components/header";
 import Main from "../components/main";
 import AppBarCollapse from "../components/navbar";
+import Contact from "../components/contact";
 
 const IndexPage = () => (
     <div>
@@ -19,6 +20,7 @@ const IndexPage = () => (
         <AppBarCollapse />
         <Header />
         <Main />
+        <Contact />
     </div>
 );
 
