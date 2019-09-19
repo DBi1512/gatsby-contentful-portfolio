@@ -8,6 +8,7 @@ const Contact = () => (
         <div className="contact-information container">
             <p>Have any question? Feel free to contact me by filling in the form below:</p>
 
+            {/* Using Formspree free package (50 emails/month) */}
             <form action="https://formspree.io/dean.t.phan@gmail.com" method="POST">
                 <label htmlFor="name" />
                 <input

@@ -38,23 +38,23 @@ const Header = () => {
 
     return (
         <div className="profile" id="home">
-            <div className="profile-picture">
+            {/* <div className="profile-picture">
                 <Img className="profile-picture-img" fluid={data.contentfulHeader.avatar.fluid} alt="" />
-            </div>
+            </div> */}
 
             <div>
                 <h1>Dean Phan</h1>
             </div>
 
-            <div>
-                <a href="https://www.integrify.fi/">
+            {/* <div>
+                <a href="https://www.integrify.fi/" target="_blank">
                     <Img
                         className="logo integrify-logo"
                         fluid={data.contentfulHeader.logo.fluid}
                         alt="integrify logo"
                     />
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 };

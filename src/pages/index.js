@@ -8,19 +8,18 @@ import React from "react";
 import "../components/index.css";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import HelmetComponent from "../components/Helmet";
+import Introduction from "../components/introduction";
 import Header from "../components/header";
 import Main from "../components/main";
-import AppBarCollapse from "../components/navbar";
-import Contact from "../components/contact";
 
 const IndexPage = () => (
     <div>
         <CssBaseline />
         <HelmetComponent />
-        <AppBarCollapse />
-        <Header />
+        {/* <Header /> */}
+        <Introduction />
+
         <Main />
-        <Contact />
     </div>
 );
 

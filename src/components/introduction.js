@@ -18,9 +18,7 @@ const Introduction = () => {
 
     return (
         <div>
-            <section id="introduction">
-                <div className="container">{documentToReactComponents(contentfulIntroduction.introduction.json)}</div>
-            </section>
+            <section id="introduction">{/* <div className="introduction-container" /> */}</section>
         </div>
     );
 };
