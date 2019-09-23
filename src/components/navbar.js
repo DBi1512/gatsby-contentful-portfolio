@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-indent-props */
 import React from "react";
 
 import ReactResizeDetector from "react-resize-detector";
@@ -31,19 +32,6 @@ import ToolbarMenu from "./ToolbarMenu";
 import "./navbar.css";
 
 const drawerWidth = 200;
-
-// const styles = {
-//     root: {
-//         flexGrow: 1,
-//     },
-//     grow: {
-//         flexGrow: 1,
-//     },
-//     menuButton: {
-//         marginLeft: -12,
-//         marginRight: 20,
-//     },
-// };
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -85,6 +73,13 @@ function ResponsiveDrawer(props) {
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const [offset, setOffset] = React.useState(0);
 
+    // Requiring function causes error during builds
+    // as the code tries to reference window
+    // const module = require("module") // Error
+    // // Wrap the require in check for window
+    // if (typeof window !== `undefined`) {
+    //   const module = require("module")
+    // }
     React.useEffect(() => {
         if (typeof window !== "undefined" && window.matchMedia("(max-width: 600px)").matches) {
             setOffset(80);
