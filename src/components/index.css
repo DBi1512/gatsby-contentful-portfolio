@@ -18,18 +18,6 @@
     color: var(--purple);
 }
 
-.Red-background {
-    background-color: var(--red);
-}
-
-.Blue-background {
-    background-color: var(--blue);
-}
-
-.Purple-background {
-    background-color: var(--purple);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -164,6 +152,7 @@ header {
     font-size: 2em;
     font-weight: 500;
     color: #228b22;
+    margin: 0;
 }
 
 .Navbar-item {
