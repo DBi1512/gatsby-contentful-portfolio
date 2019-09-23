@@ -82,7 +82,7 @@ function ResponsiveDrawer(props) {
     // }
     React.useEffect(() => {
         if (typeof window !== "undefined" && window.matchMedia("(max-width: 600px)").matches) {
-            setOffset(80);
+            setOffset(75);
         } else {
             setOffset(0);
         }
@@ -121,12 +121,7 @@ Phan
 
             <Divider />
 
-            <ReactResizeDetector 
-                handleWidth
-                onResize={HandleWindowResize}
-                refreshMode="throttle"
-                refreshRate={100}
-            >
+            <ReactResizeDetector handleWidth onResize={HandleWindowResize} refreshMode="throttle" refreshRate={100}>
                 <AnchorLink offset={offset} href="#about" onClick={handleDrawerClose}>
                     <List>
                         <ListItem button className="Navbar-item Red-hover">
@@ -183,12 +178,12 @@ Phan
                     >
                         <MenuIcon className="Hamburger-menu" />
                     </IconButton>
-                    <div className="Author">
+                    <a href="#" className="Author">
                         <Typography variant="h6" noWrap className="Author-title">
                             Dean Phan
                         </Typography>
                         <p>Front-end Developer</p>
-                    </div>
+                    </a>
                 </Toolbar>
             </AppBar>
             <nav className={classes.drawer} aria-label="mailbox folders">
@@ -235,56 +230,3 @@ ResponsiveDrawer.propTypes = {
 };
 
 export default ResponsiveDrawer;
-
-// function ButtonAppBar(props) {
-//     const { classes } = props;
-//     // function onLogin() {
-//     //     alert("Login TBD");
-//     // }
-//     // function onSignup() {
-//     //     alert("Signup TBD");
-//     // }
-
-//     return (
-//         <AppBar position="sticky" className="Nav">
-//             <Toolbar>
-//                 <Typography variant="title" color="inherit">
-//                     <a href="/" className="Portfolio">
-//                         <strong>Portfolio</strong>
-//                     </a>
-//                 </Typography>
-
-//                 <ToolbarMenu
-//                     render={collapsed => (collapsed
-//                         ? [
-//                             <MenuItem key="home" autoclose>
-//                                 <AnchorLink offset="100" href="#home">Home</AnchorLink>
-//                             </MenuItem>,
-//                             <MenuItem key="projects" autoclose>
-//                                 <AnchorLink offset="100" href="#projects">Projects</AnchorLink>
-//                             </MenuItem>,
-//                             <MenuItem key="contact" autoclose>
-//                                 <AnchorLink href="#contact">Contact</AnchorLink>
-//                             </MenuItem>,
-//                         ]
-//                         : [
-
-//                                 <Button key="home" color="inherit" className={classes.menuButton}>
-//                                           <AnchorLink offset="100" href="#home">Home</AnchorLink>
-//                                 </Button>,
-//                             <Button key="projects" color="inherit" className={classes.menuButton}>
-//                                 <AnchorLink offset="100" href="#projects">Projects</AnchorLink>
-//                             </Button>,
-//                             <Button key="contact" color="inherit" className={classes.menuButton}>
-//                                 <AnchorLink offset="100" href="#contact">Contact</AnchorLink>
-
-//                             </Button>,
-//                         ])
-//                     }
-//                 />
-//             </Toolbar>
-//         </AppBar>
-//     );
-// }
-
-// export default withStyles(styles)(ButtonAppBar);

@@ -1,6 +1,8 @@
 import React from "react";
 import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
+import ReactIcon from "../images/react-1.svg";
+import FirebaseIcon from "../images/firebase-2.svg";
 
 const Projects = () => {
     const data = useStaticQuery(graphql`
@@ -62,11 +64,19 @@ const Projects = () => {
                         <div>
                             <Img fluid={data.TTU.childImageSharp.fluid} />
                             <h3>Think Tank United</h3>
-                            <p>Final project from Integrify for real company</p>
+                            {/* <p>Final project from Integrify for real company</p> */}
+                            <div className="Skill-icons">
+                                <img src={ReactIcon} alt="react-icon" className="icons" />
+                                <img src={ReactIcon} alt="react-icon" className="icons" />
+                                <img src={ReactIcon} alt="react-icon" className="icons" />
+                                <img src={ReactIcon} alt="react-icon" className="icons" />
+                                <img src={ReactIcon} alt="react-icon" className="icons" />
+                                <img src={FirebaseIcon} alt="react-icon" className="icons" />
+                            </div>
                         </div>
                         <div className="project-buttons">
                             <a className="website-button" href="https://ttu-develop.netlify.com/">
-                                Check out TTU project
+                                Demo
                             </a>
                         </div>
                     </div>

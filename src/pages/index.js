@@ -16,9 +16,7 @@ const IndexPage = () => (
     <div>
         <CssBaseline />
         <HelmetComponent />
-        {/* <Header /> */}
         <Introduction />
-
         <Main />
     </div>
 );
