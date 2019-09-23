@@ -288,6 +288,7 @@ header {
 .Author-title,
 .Author p {
     text-align: center;
+    margin: 0 !important;
 }
 
 .Author-title {
