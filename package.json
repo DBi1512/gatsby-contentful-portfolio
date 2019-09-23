@@ -27,6 +27,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-resize-detector": "^4.2.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.87.3"
   },

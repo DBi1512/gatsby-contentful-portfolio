@@ -2,8 +2,10 @@ import React from "react";
 import "./index.css";
 
 const Contact = () => (
-    <section id="contact">
-        <h1>Contact</h1>
+    <section id="contact" className="Section-container">
+        <div className="Section-title">
+            <h1 className="Section-title-text">Contact</h1>
+        </div>
 
         <div className="contact-information container">
             <p>Have any question? Feel free to contact me by filling in the form below:</p>
@@ -12,7 +14,7 @@ const Contact = () => (
             <form action="https://formspree.io/dean.t.phan@gmail.com" method="POST">
                 <label htmlFor="name" />
                 <input
-                    class="personal-information"
+                    className="personal-information"
                     type="text"
                     id="name"
                     name="name"
@@ -23,7 +25,7 @@ const Contact = () => (
 
                 <label htmlFor="email" />
                 <input
-                    class="personal-information"
+                    className="personal-information"
                     type="email"
                     id="email"
                     name="email"
