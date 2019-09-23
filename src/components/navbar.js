@@ -86,7 +86,7 @@ function ResponsiveDrawer(props) {
     const [offset, setOffset] = React.useState(0);
 
     React.useEffect(() => {
-        if (window.matchMedia("(max-width: 600px)").matches) {
+        if (typeof window !== "undefined" && window.matchMedia("(max-width: 600px)").matches) {
             setOffset(80);
         } else {
             setOffset(0);
@@ -94,26 +94,19 @@ function ResponsiveDrawer(props) {
     }, []);
 
     const HandleWindowResize = () => {
-        if (window.matchMedia("(max-width: 600px)").matches) {
+        if (typeof window !== "undefined" && window.matchMedia("(max-width: 600px)").matches) {
             setOffset(80);
         } else {
             setOffset(0);
         }
     };
 
-    console.log(window.innerWidth);
-    console.log(offset);
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
 
     const handleDrawerClose = () => {
         setMobileOpen(false);
-        // if (window.matchMedia("(max-width: 600px)").matches) {
-        //     setOffset(80);
-        // } else {
-        //     setOffset(0);
-        // }
     };
 
     const drawer = (
