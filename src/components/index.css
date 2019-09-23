@@ -120,6 +120,7 @@ img {
 
 .Section-container {
     margin-left: 200px;
+    padding-bottom: 100px;
 }
 
 .Section-title {
@@ -275,6 +276,7 @@ header {
     color: #000;
 }
 
+.Author-title,
 .Author p {
     text-align: center;
 }

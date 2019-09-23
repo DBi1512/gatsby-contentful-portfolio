@@ -184,7 +184,7 @@ Phan
                         <MenuIcon className="Hamburger-menu" />
                     </IconButton>
                     <div className="Author">
-                        <Typography variant="h6" noWrap>
+                        <Typography variant="h6" noWrap className="Author-title">
                             Dean Phan
                         </Typography>
                         <p>Front-end Developer</p>
