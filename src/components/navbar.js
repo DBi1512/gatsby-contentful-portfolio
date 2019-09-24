@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-indent-props */
 import React from "react";
-
 import ReactResizeDetector from "react-resize-detector";
 
 import PropTypes from "prop-types";
@@ -28,6 +27,8 @@ import PersonIcon from "@material-ui/icons/Person";
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import ContactsIcon from "@material-ui/icons/Contacts";
+import LinkedInIcon from "../images/linkedin.svg";
+import GithubIcon from "../images/github-1.svg";
 
 import ToolbarMenu from "./ToolbarMenu";
 import "./navbar.css";
@@ -174,6 +175,18 @@ function ResponsiveDrawer(props) {
                         </ListItem>
                     </List>
                 </AnchorLink>
+
+                <Divider />
+
+                <div className="Contact-icons">
+                    <a href="https://www.linkedin.com/in/dbi1512/" target="_blank">
+                        <img src={LinkedInIcon} alt="icon" className="Contact-icon effect-8" />
+                    </a>
+
+                    <a href="https://github.com/DBi1512" target="_blank">
+                        <img src={GithubIcon} alt="icon" className="Contact-icon effect-8" />
+                    </a>
+                </div>
             </ReactResizeDetector>
         </div>
     );
