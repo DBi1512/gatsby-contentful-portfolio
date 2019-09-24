@@ -1,8 +1,8 @@
 import React from "react";
 import Divider from "@material-ui/core/Divider";
-import Html5 from "../images/html5.svg";
+import Html5Icon from "../images/html5.svg";
 import JsxIcon from "../images/jsx.svg";
-import Css3 from "../images/CSS3.svg";
+import Css3Icon from "../images/CSS3.svg";
 import BootstrapIcon from "../images/bootstrap-4.svg";
 import MaterialUiIcon from "../images/material-ui.svg";
 import Javascript from "../images/javascript.svg";
@@ -28,7 +28,7 @@ const Skills = () => (
             <Divider />
             <div className="Skill-row">
                 <div className="Skill-item">
-                    <img src={Html5} className="skill-icon" alt="skill" />
+                    <img src={Html5Icon} className="skill-icon" alt="skill" />
                     <p className="Skill-text">HTML5</p>
                 </div>
                 <div className="Skill-item">
@@ -36,7 +36,7 @@ const Skills = () => (
                     <p className="Skill-text">JSX</p>
                 </div>
                 <div className="Skill-item">
-                    <img src={Css3} className="skill-icon" alt="skill" />
+                    <img src={Css3Icon} className="skill-icon" alt="skill" />
                     <p className="Skill-text">CSS3</p>
                 </div>
                 <div className="Skill-item">
