@@ -2,7 +2,7 @@ import React from "react";
 import Divider from "@material-ui/core/Divider";
 import Html5Icon from "../images/html5.svg";
 import JsxIcon from "../images/jsx.svg";
-import Css3Icon from "../images/CSS3.svg";
+import Css3Icon from "../images/css3.svg";
 import BootstrapIcon from "../images/bootstrap-4.svg";
 import MaterialUiIcon from "../images/material-ui.svg";
 import Javascript from "../images/javascript.svg";
