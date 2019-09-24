@@ -1,34 +1,120 @@
 import React from "react";
+import Divider from "@material-ui/core/Divider";
 import Html5 from "../images/html5.svg";
-import Css3 from "../images/css3.svg";
+import JsxIcon from "../images/jsx.svg";
+import Css3 from "../images/CSS3.svg";
+import BootstrapIcon from "../images/bootstrap-4.svg";
+import MaterialUiIcon from "../images/material-ui.svg";
 import Javascript from "../images/javascript.svg";
 import ReactIcon from "../images/react-1.svg";
 import GatsbyIcon from "../images/gatsby.svg";
+import MongoDBIcon from "../images/mongodb.svg";
+import FirebaseIcon from "../images/firebase-2.svg";
+import GraphQLIcon from "../images/graphql.svg";
+import GithubIcon from "../images/github-1.svg";
+import ContentfulIcon from "../images/contentful.svg";
+import WordpressIcon from "../images/wordpress-icon.svg";
+import HerokuIcon from "../images/heroku.svg";
+import NodeJsIcon from "../images/nodejs-1.svg";
 
 const Skills = () => (
-    <section id="profession">
-        <div className="container">
-            <div className="profession-type">
-                <div className="content front-end">
-                    <h3>Front-end</h3>
-                    <p>
-                        I tend to code from scratch, maintain and improve website, implement visual elements to work
-                        with back-end and web design.
-                    </p>
-                    <h4>Skills:</h4>
-                    <img src={Html5} className="skill-icon" alt="skill" />
-                    <img src={Css3} className="skill-icon" alt="skill" />
-                    <img src={Javascript} className="skill-icon" alt="skill" />
-                    <img src={ReactIcon} className="skill-icon" alt="skill" />
-                    <img src={GatsbyIcon} className="skill-icon" alt="skill" />
-                </div>
+    <section id="skills" className="Section-container">
+        <div className="Section-title">
+            <h1 className="Section-title-text">Skills</h1>
+        </div>
 
-                <div className="content back-end">
-                    <h3>Back-end</h3>
-                    <p>
-                        I develop functional and sustainable web applications with clean codes, web application logic as
-                        well as for the integration of the front-end part.
-                    </p>
+        <div className="Container Skills-container">
+            <h4 className="Skill-title">HTML &#38; CSS</h4>
+            <Divider />
+            <div className="Skill-row">
+                <div className="Skill-item">
+                    <img src={Html5} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">HTML5</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={JsxIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">JSX</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={Css3} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">CSS3</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={BootstrapIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Bootstrap</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={MaterialUiIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Material-Ui</p>
+                </div>
+            </div>
+        </div>
+
+        <div className="Container Skills-container">
+            <h4 className="Skill-title">JavaScript</h4>
+            <Divider />
+            <div className="Skill-row">
+                <div className="Skill-item">
+                    <img src={Javascript} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">JavaScript</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={ReactIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">React</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={GatsbyIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Gatsby</p>
+                </div>
+            </div>
+        </div>
+        <div className="Container Skills-container">
+            <h4 className="Skill-title">Back-End</h4>
+            <Divider />
+            <div className="Skill-row">
+                <div className="Skill-item">
+                    <img src={FirebaseIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Firebase</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={GraphQLIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">GraphQL</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={MongoDBIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">MongoDB</p>
+                </div>
+            </div>
+        </div>
+        <div className="Container Skills-container">
+            <h4 className="Skill-title">Others</h4>
+            <Divider />
+            <div className="Skill-row">
+                <div className="Skill-item">
+                    <img src={GithubIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Github</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={ContentfulIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Contentful</p>
+                </div>
+            </div>
+        </div>
+        <div className="Container Skills-container">
+            <h4 className="Skill-title">Knowledge of:</h4>
+            <Divider />
+            <div className="Skill-row">
+                <div className="Skill-item">
+                    <img src={WordpressIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Wordpress</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={HerokuIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Heroku</p>
+                </div>
+                <div className="Skill-item">
+                    <img src={NodeJsIcon} className="skill-icon" alt="skill" />
+                    <p className="Skill-text">Node Js</p>
                 </div>
             </div>
         </div>

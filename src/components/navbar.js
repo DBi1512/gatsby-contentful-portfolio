@@ -25,6 +25,7 @@ import { Button, MenuItem } from "@material-ui/core";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import PersonIcon from "@material-ui/icons/Person";
+import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import ContactsIcon from "@material-ui/icons/Contacts";
 
@@ -80,17 +81,17 @@ function ResponsiveDrawer(props) {
     // if (typeof window !== `undefined`) {
     //   const module = require("module")
     // }
-    React.useEffect(() => {
-        if (typeof window !== "undefined" && window.matchMedia("(max-width: 600px)").matches) {
-            setOffset(75);
-        } else {
-            setOffset(0);
-        }
-    }, []);
+    // React.useEffect(() => {
+    //     if (typeof window !== "undefined" && window.matchMedia("(max-width: 600px)").matches) {
+    //         setOffset(75);
+    //     } else {
+    //         setOffset(0);
+    //     }
+    // }, []);
 
     const HandleWindowResize = () => {
         if (typeof window !== "undefined" && window.matchMedia("(max-width: 600px)").matches) {
-            setOffset(80);
+            setOffset(75);
         } else {
             setOffset(0);
         }
@@ -113,7 +114,7 @@ function ResponsiveDrawer(props) {
                         {" "}
                         <br />
                         {" "}
-Phan
+                        Phan
                     </h1>
                     <p>Front-end Developer</p>
                 </div>
@@ -130,6 +131,19 @@ Phan
                             </ListItemIcon>
                             <ListItemText className="Navbar-item-text">
                                 <p>About</p>
+                            </ListItemText>
+                        </ListItem>
+                    </List>
+                </AnchorLink>
+
+                <AnchorLink offset={offset} href="#skills" onClick={handleDrawerClose}>
+                    <List>
+                        <ListItem button className="Navbar-item Green-hover">
+                            <ListItemIcon>
+                                <VpnKeyIcon className="svg_icons Green" />
+                            </ListItemIcon>
+                            <ListItemText className="Navbar-item-text">
+                                <p>Skills</p>
                             </ListItemText>
                         </ListItem>
                     </List>
