@@ -1,8 +1,8 @@
 :root {
     --grey: #303030;
     --red: #b22222;
-    --blue: #0000cd;
-    --purple: #8b008b;
+    --blue: #1e90ff;
+    --purple: #800080;
     --green: #228b22;
     --lightgreen: #79b044;
 }
@@ -89,9 +89,8 @@ p {
     font-weight: 300;
 }
 
-.fa-quote-left,
-.fa-quote-right {
-    font-size: 0.6em;
+.para {
+    margin-bottom: 0;
 }
 
 input:focus,
@@ -165,6 +164,10 @@ img {
     margin: 0;
 }
 
+.Navbar-title p {
+    margin: 0;
+}
+
 .Navbar-item {
     transition: all 0.3s ease 0s;
 }
@@ -192,10 +195,6 @@ img {
 .Navbar-item-text {
     font-size: 1em !important;
     font-weight: 400;
-}
-
-.Navbar-item-text p {
-    margin-bottom: 0;
 }
 
 .MuiList-padding {
@@ -281,11 +280,17 @@ img {
     flex-direction: column;
 }
 
+.Icon-link {
+    width: 60px;
+    margin: 0 auto;
+}
+
 .Contact-icon {
-    margin-top: 30px;
+    margin: 30px 0 0 0;
     height: 40px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+    width: 100%;
 }
 
 .Contact-icon:hover {
@@ -425,16 +430,16 @@ img {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .project {
     text-align: center;
-    flex: 1;
-    width: 20vw;
-    min-width: 330px;
+    flex: 1 0 30%;
+    /* max-width: 500px; */
+    min-width: 360px;
     max-height: 500px;
-    min-height: 300px;
+    min-height: 200px;
     margin: 10px;
     padding: 10px;
     perspective: 1000px;
@@ -444,7 +449,7 @@ img {
 
 .project-detail {
     position: relative;
-    width: 20vw;
+    width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
@@ -455,32 +460,35 @@ img {
     border-radius: 5px;
 }
 
-.project:hover .project-detail {
-    transform: rotateY(-180deg);
-}
-
-.front,
-.back {
+.overlay {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--grey);
+    overflow: hidden;
     width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+    height: 0;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+    color: #fff;
 }
 
-.back {
-    background-color: var(--grey);
-    color: white;
-    transform: rotateY(180deg);
-    border-radius: 5px;
+.front {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+}
+
+.project-detail:hover .overlay,
+.project-detail:active .overlay {
+    height: 95%;
 }
 
 .project img {
     width: 100%;
-    min-height: 60%;
+    /* height: auto; */
+    /* min-height: 300px; */
     border-radius: 5px;
     margin-bottom: 1vh;
 }
@@ -488,6 +496,10 @@ img {
 .project-detail h3 {
     margin: 30px auto;
     text-align: center;
+}
+
+.Card-wrapper {
+    padding: 10px;
 }
 
 .project-buttons {

@@ -117,7 +117,7 @@ function ResponsiveDrawer(props) {
                         {" "}
                         Phan
                     </h1>
-                    <p>Front-end Developer</p>
+                    <p className="para">Front-end Developer</p>
                 </div>
             </a>
 
@@ -179,12 +179,12 @@ function ResponsiveDrawer(props) {
                 <Divider />
 
                 <div className="Contact-icons">
-                    <a href="https://www.linkedin.com/in/dbi1512/" target="_blank">
-                        <img src={LinkedInIcon} alt="icon" className="Contact-icon effect-8" />
+                    <a href="https://www.linkedin.com/in/dbi1512/" target="_blank" className="Icon-link">
+                        <img src={LinkedInIcon} alt="icon" className="Contact-icon" />
                     </a>
 
-                    <a href="https://github.com/DBi1512" target="_blank">
-                        <img src={GithubIcon} alt="icon" className="Contact-icon effect-8" />
+                    <a href="https://github.com/DBi1512" target="_blank" className="Icon-link">
+                        <img src={GithubIcon} alt="icon" className="Contact-icon" />
                     </a>
                 </div>
             </ReactResizeDetector>
