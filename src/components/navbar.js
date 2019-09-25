@@ -117,7 +117,7 @@ function ResponsiveDrawer(props) {
                         {" "}
                         Phan
                     </h1>
-                    <p className="para">Front-end Developer</p>
+                    <h5 className="Navbar-subtitle">Front-end Developer</h5>
                 </div>
             </a>
 
@@ -131,7 +131,7 @@ function ResponsiveDrawer(props) {
                                 <PersonIcon className="svg_icons Red" />
                             </ListItemIcon>
                             <ListItemText className="Navbar-item-text">
-                                <p>About</p>
+                                <p className="para">About</p>
                             </ListItemText>
                         </ListItem>
                     </List>
@@ -144,7 +144,7 @@ function ResponsiveDrawer(props) {
                                 <VpnKeyIcon className="svg_icons Green" />
                             </ListItemIcon>
                             <ListItemText className="Navbar-item-text">
-                                <p>Skills</p>
+                                <p className="para">Skills</p>
                             </ListItemText>
                         </ListItem>
                     </List>
@@ -157,7 +157,7 @@ function ResponsiveDrawer(props) {
                                 <DashboardIcon className="svg_icons Blue" />
                             </ListItemIcon>
                             <ListItemText className="Navbar-item-text">
-                                <p>Projects</p>
+                                <p className="para">Projects</p>
                             </ListItemText>
                         </ListItem>
                     </List>
@@ -170,7 +170,7 @@ function ResponsiveDrawer(props) {
                                 <ContactsIcon className="Purple" />
                             </ListItemIcon>
                             <ListItemText className="Navbar-item-text">
-                                <p>Contact</p>
+                                <p className="para">Contact</p>
                             </ListItemText>
                         </ListItem>
                     </List>
@@ -209,7 +209,7 @@ function ResponsiveDrawer(props) {
                         <Typography variant="h6" noWrap className="Author-title">
                             Dean Phan
                         </Typography>
-                        <p>Front-end Developer</p>
+                        <h5 className="Navbar-subtitle-mobile">Front-end Developer</h5>
                     </a>
                 </Toolbar>
             </AppBar>

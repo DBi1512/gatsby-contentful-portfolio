@@ -35,7 +35,7 @@ html {
 
 body {
     font-family: "Noto Serif SC", serif;
-    font-size: 18px;
+    font-size: 18px !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.5em;
@@ -91,6 +91,7 @@ p {
 
 .para {
     margin-bottom: 0;
+    font-size: 1em;
 }
 
 input:focus,
@@ -134,19 +135,6 @@ img {
 
 /* ====== navbar ====== */
 
-/* header {
-    margin: 0;
-    background: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-} */
-
 .Navbar-side {
     padding: 20px;
 }
@@ -154,6 +142,18 @@ img {
 .Navbar-side:hover {
     border-left: 5px solid var(--grey) !important;
     transition: all 0.3s ease 0s;
+}
+
+.Navbar-subtitle {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.Navbar-subtitle-mobile {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .Navbar-title {
@@ -297,50 +297,6 @@ img {
     opacity: 0.6;
 }
 
-/* ====== header ====== */
-
-.profile {
-    position: relative;
-    background: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 65px;
-    /* padding-top: 100px; */
-    z-index: 999;
-}
-
-.profile > div {
-    flex: 1;
-}
-
-.profile-picture-img {
-    height: 150px;
-    width: 150px;
-    border-radius: 5px;
-}
-
-.integrify-logo {
-    width: 100px;
-    float: right;
-    overflow: hidden;
-    transition-duration: 0.5s;
-    transition-property: transform;
-}
-
-.integrify-logo:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    opacity: 0.8;
-}
-
-.profile h1 {
-    padding-left: 10px;
-}
-
 /* ====== introduction ====== */
 
 #introduction {
@@ -413,6 +369,10 @@ img {
     margin: 20px;
 }
 
+.Skill-item img {
+    margin: 0;
+}
+
 .Skill-text {
     text-align: center;
     margin-top: 10px;
@@ -445,6 +405,7 @@ img {
     perspective: 1000px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .project-detail {
@@ -465,13 +426,13 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--grey);
+    background-color: rgba(255, 255, 255, 0.88);
     overflow: hidden;
     width: 100%;
     height: 0;
     transition: all 0.2s ease;
-    border-radius: 5px;
-    color: #fff;
+    border-radius: 0 0 5px 5px;
+    color: #000;
 }
 
 .front {
@@ -499,7 +460,7 @@ img {
 }
 
 .Card-wrapper {
-    padding: 10px;
+    padding: 30px 10px 10px 30px;
 }
 
 .project-buttons {
@@ -531,9 +492,19 @@ img {
     transition: all 0.3s ease 0s;
 }
 
+.project-skills {
+    text-align: left;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
 .icons {
-    width: 30px;
-    height: 30px;
+    width: 35px !important;
+    height: 35px;
+    margin-right: 20px;
 }
 
 /* ====== Contact ====== */
@@ -603,6 +574,30 @@ form {
 }
 
 /* ====== footer ====== */
+
+.anchor {
+    text-decoration: none;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 40%;
+}
+
+.arrow {
+    color: #fff;
+    background: var(--green);
+    border-radius: 50%;
+    font-size: 35px !important;
+    transition: all 0.3s ease 0s;
+}
+
+.arrow:hover {
+    background: var(--lightgreen);
+    color: white;
+    transition: all 0.3s ease 0s;
+}
 
 footer {
     background-color: white;
@@ -694,6 +689,10 @@ footer {
         display: none;
     }
 
+    .Navbar-para {
+        font-size: 16px !important;
+    }
+
     .Skill-title {
         font-size: 1.3em;
         padding: 10px;
@@ -722,8 +721,9 @@ footer {
         padding-bottom: 20px;
     }
 
-    header .navbar {
-        margin-bottom: 80px;
+    .project {
+        padding: 0;
+        margin: 0;
     }
 
     .skill-icon {

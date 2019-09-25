@@ -2,6 +2,22 @@ import React from "react";
 import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 import "./Projects.css";
+import Html5Icon from "../images/html5.svg";
+import JsxIcon from "../images/jsx.svg";
+import Css3Icon from "../images/css3.svg";
+import BootstrapIcon from "../images/bootstrap-4.svg";
+import MaterialUiIcon from "../images/material-ui.svg";
+import Javascript from "../images/javascript.svg";
+import ReactIcon from "../images/react-1.svg";
+import GatsbyIcon from "../images/gatsby.svg";
+import MongoDBIcon from "../images/mongodb.svg";
+import FirebaseIcon from "../images/firebase-2.svg";
+import GraphQLIcon from "../images/graphql.svg";
+import GithubIcon from "../images/github-1.svg";
+import ContentfulIcon from "../images/contentful.svg";
+import WordpressIcon from "../images/wordpress-icon.svg";
+import HerokuIcon from "../images/heroku.svg";
+import NodeJsIcon from "../images/nodejs-1.svg";
 
 const Projects = () => {
     const data = useStaticQuery(graphql`
@@ -68,7 +84,16 @@ const Projects = () => {
 
                         <div className="overlay">
                             <div className="Card-wrapper">
-                                <p>Back of the card</p>
+                                <p className="para">Final project from Integrify with Think Tank United company, Netherland.<br />On-going project and will be ready to launch in October, 2019.</p>
+                                <br />
+                                <p className="para"><strong>Skills: </strong>React, Gatsby, Contentful, Firebase, GraphQL</p>
+                                <div className="project-skills">
+                                    <img src={ReactIcon} alt="icon" className="icons" />
+                                    <img src={GatsbyIcon} alt="icon" className="icons" />
+                                    <img src={ContentfulIcon} alt="icon" className="icons" />
+                                    <img src={FirebaseIcon} alt="icon" className="icons" />
+                                    <img src={GraphQLIcon} alt="icon" className="icons" />
+                                </div>
                                 <div className="project-buttons">
                                     <a className="website-button" href="https://ttu-develop.netlify.com/">
                                     Demo
@@ -91,10 +116,14 @@ const Projects = () => {
                         </div>
                         <div className="overlay">
                             <div className="Card-wrapper">
-                                <p>
+                                <p className="para">
                                     Learning Finnish app. This group project is for learning how make an app with front-end
                                     and back-end.
                                 </p>
+                                <div className="project-skills">
+                                    <img src={ReactIcon} alt="icon" className="icons" />
+                                    <img src={MongoDBIcon} alt="icon" className="icons" />
+                                </div>
                                 <div className="project-buttons">
                                     <a className="website-button" href="https://github.com/DBi1512/demo-day">
                                         Github
@@ -163,7 +192,7 @@ const Projects = () => {
                             <div className="Card-wrapper">
                                 <p>
                                     This unfinished website is a different direction before I joined Integrify. From which I
-                                    learned what is Wordpress and Php
+                                    learned Wordpress and basic PHP.
                                 </p>
                                 <div className="project-buttons">
                                     <a className="website-button" href="https://github.com/DBi1512/wayneTheDealer">
@@ -186,10 +215,13 @@ const Projects = () => {
                         </div>
                         <div className="overlay">
                             <div className="Card-wrapper">
-                                <p>
-                                    This is my first ever made website based on the real website after learning how to show
-                                    "Hello World"
+                                <p className="para">
+                                    This is my first ever made website based on the real website after learning how to code. <br /><strong>Skills: </strong>HTML, CSS
                                 </p>
+                                <div className="project-skills">
+                                    <img src={Html5Icon} alt="icon" className="icons" />
+                                    <img src={Css3Icon} alt="icon" className="icons" />
+                                </div>
                                 <div className="project-buttons">
                                     <a
                                         className="website-button"
