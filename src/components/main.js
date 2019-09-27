@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
+import BackgroundImage from "gatsby-background-image";
 import Skills from "./skills";
 import Projects from "./Projects";
 import Contact from "./contact";
@@ -15,8 +17,34 @@ const Main = () => {
         }
     }, [position]);
 
+    const data = useStaticQuery(graphql`
+        query {
+            codeBackground: file(relativePath: { eq: "code-background.jpg" }) {
+                childImageSharp {
+                    fluid(quality: 90, maxWidth: 1920) {
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            }
+        }
+    `);
+
+    const imageData = [
+        "linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95))",
+        data.codeBackground.childImageSharp.fluid,
+    ];
+
+    const Styles = {
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+        position: "relative",
+        width: "100%",
+    };
+
     return (
-        <>
+        <BackgroundImage Tag="section" id="test" fluid={imageData} style={Styles}>
             {position > 1 ? (
                 <a href="#home" className="anchor scroll-to-top">
                     <ExpandLessIcon className="arrow" />
@@ -26,7 +54,7 @@ const Main = () => {
             <Skills />
             <Projects />
             <Contact />
-        </>
+        </BackgroundImage>
     );
 };
 export default Main;

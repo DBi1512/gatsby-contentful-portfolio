@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import ProfileImage from "../images/dean1.jpg";
 
-const BackgroundSection = ({ className }) => {
+const BackgroundSection = () => {
     const data = useStaticQuery(graphql`
         query {
             deanOne: file(relativePath: { eq: "dean1.jpg" }) {
@@ -31,32 +31,10 @@ const BackgroundSection = ({ className }) => {
     };
 
     return (
-        <BackgroundImage Tag="section" id="test" className={className} fluid={imageData} style={Styles}>
+        <BackgroundImage Tag="section" id="test" fluid={imageData} style={Styles}>
             <section id="introduction" />
         </BackgroundImage>
     );
 };
 
 export default BackgroundSection;
-
-// const Introduction = () => {
-//     const { contentfulIntroduction } = useStaticQuery(
-//         graphql`
-//             {
-//                 contentfulIntroduction {
-//                     introduction {
-//                         json
-//                     }
-//                 }
-//             }
-//         `,
-//     );
-
-//     return (
-//         <div>
-//             <section id="introduction" style={Styles} />
-//         </div>
-//     );
-// };
-
-// export default Introduction;
