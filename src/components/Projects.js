@@ -84,9 +84,9 @@ const Projects = () => {
 
                         <div className="overlay">
                             <div className="Card-wrapper">
-                                <p className="para">Final project from Integrify with Think Tank United company, Netherland.<br />On-going project and will be ready to launch in October, 2019.</p>
-                                <br />
-                                <p className="para"><strong>Skills: </strong>React, Gatsby, Contentful, Firebase, GraphQL</p>
+                                <p className="para">
+                                    Final on-going project from Integrify with TTU, Netherland and will be ready to launch in October, 2019.
+                                </p>
                                 <div className="project-skills">
                                     <img src={ReactIcon} alt="icon" className="icons" />
                                     <img src={GatsbyIcon} alt="icon" className="icons" />
@@ -122,7 +122,7 @@ const Projects = () => {
                                 </p>
                                 <div className="project-skills">
                                     <img src={ReactIcon} alt="icon" className="icons" />
-                                    <img src={MongoDBIcon} alt="icon" className="icons" />
+                                    <img src={MongoDBIcon} alt="icon" className="icons mongodb-icon" />
                                 </div>
                                 <div className="project-buttons">
                                     <a className="website-button" href="https://github.com/DBi1512/demo-day">

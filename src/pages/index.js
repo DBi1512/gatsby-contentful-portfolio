@@ -7,8 +7,8 @@ import React from "react";
 // import "semantic-ui-css/semantic.min.css";
 import "../components/index.css";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import HelmetComponent from "../components/Helmet";
+import Navbar from "../components/navbar";
 import Introduction from "../components/introduction";
 import Main from "../components/main";
 
@@ -16,12 +16,9 @@ const IndexPage = () => (
     <div>
         <CssBaseline />
         <HelmetComponent />
+        <Navbar />
         <Introduction />
         <Main />
-        <a href="#top" className="anchor scroll-to-top">
-            {/* <i className="fas fa-angle-up" /> */}
-            <ExpandLessIcon className="arrow" />
-        </a>
     </div>
 );
 

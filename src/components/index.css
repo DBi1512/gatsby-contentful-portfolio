@@ -152,8 +152,9 @@ img {
 
 .Navbar-subtitle-mobile {
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
+    margin: 0;
 }
 
 .Navbar-title {
@@ -338,7 +339,7 @@ img {
 /* ====== Skills ====== */
 
 .Container {
-    width: 50vw;
+    width: 60vw;
     margin: 60px auto;
     min-width: 330px;
     padding: 10px;
@@ -360,6 +361,7 @@ img {
 .Skill-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .Skill-item {
@@ -379,7 +381,8 @@ img {
 }
 
 .skill-icon {
-    height: 90px;
+    height: 5vw;
+    min-height: 50px;
 }
 
 /* ====== Projects ====== */
@@ -397,7 +400,7 @@ img {
     text-align: center;
     flex: 1 0 30%;
     /* max-width: 500px; */
-    min-width: 360px;
+    min-width: 340px;
     max-height: 500px;
     min-height: 200px;
     margin: 10px;
@@ -448,8 +451,7 @@ img {
 
 .project img {
     width: 100%;
-    /* height: auto; */
-    /* min-height: 300px; */
+    /* min-width: 340px; */
     border-radius: 5px;
     margin-bottom: 1vh;
 }
@@ -505,6 +507,10 @@ img {
     width: 35px !important;
     height: 35px;
     margin-right: 20px;
+}
+
+.mongodb-icon {
+    width: 100px !important;
 }
 
 /* ====== Contact ====== */
@@ -582,7 +588,8 @@ form {
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
-    right: 40%;
+    right: 46%;
+    z-index: 1000;
 }
 
 .arrow {
@@ -615,6 +622,10 @@ footer {
 @media screen and (max-width: 992px) {
     body {
         width: 100%;
+    }
+
+    .skill-icon {
+        height: 4em;
     }
 }
 
@@ -697,10 +708,6 @@ footer {
         font-size: 1.3em;
         padding: 10px;
     }
-
-    .skill-icon {
-        height: 5em;
-    }
 }
 
 @media screen and (max-width: 414px) {
@@ -727,11 +734,11 @@ footer {
     }
 
     .skill-icon {
-        height: 4em;
+        height: 3em;
     }
 
-    .personal-information,
+    /* .personal-information,
     .comment-area {
         margin-left: 10px;
-    }
+    } */
 }

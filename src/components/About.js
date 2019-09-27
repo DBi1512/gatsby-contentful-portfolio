@@ -6,7 +6,7 @@ const About = () => (
             <h1 className="Section-title-text">About</h1>
         </div>
 
-        <div className="about-information">
+        <div className="Container about-information">
             <p>Hello, I'm Dean. Nice to meet you</p>
         </div>
     </section>
