@@ -1,9 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
-import Img from "gatsby-image";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import ProfileImage from "../images/dean1.jpg";
 
 const BackgroundSection = () => {
     const data = useStaticQuery(graphql`
@@ -21,13 +18,13 @@ const BackgroundSection = () => {
     const imageData = data.deanOne.childImageSharp.fluid;
 
     const Styles = {
-        // backgroundImage: `url(${ProfileImage})`,
         backgroundPosition: "top 0 right 20%",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "scroll",
         backgroundSize: "cover",
         position: "relative",
         width: "100%",
+        height: "auto",
     };
 
     return (

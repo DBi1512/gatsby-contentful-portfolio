@@ -30,12 +30,12 @@ const Main = () => {
     `);
 
     const imageData = [
-        "linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95))",
+        "linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.89))",
         data.codeBackground.childImageSharp.fluid,
     ];
 
     const Styles = {
-        backgroundPosition: "center",
+        backgroundPosition: "right 5% bottom 65%",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
@@ -46,7 +46,7 @@ const Main = () => {
     return (
         <BackgroundImage Tag="section" id="test" fluid={imageData} style={Styles}>
             {position > 1 ? (
-                <a href="#home" className="anchor scroll-to-top">
+                <a href="#top" className="anchor scroll-to-top">
                     <ExpandLessIcon className="arrow" />
                 </a>
             ) : null}

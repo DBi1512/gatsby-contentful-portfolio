@@ -15,7 +15,7 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: "module",
     },
-    plugins: ["react"],
+    plugins: ["react", "react-hooks"],
     rules: {
         indent: ["error", 4],
         quotes: [2, "double"],
@@ -23,5 +23,7 @@ module.exports = {
         "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
         "react/jsx-indent": ["error", 4],
         "react/no-unescaped-entities": [0],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
     },
 };

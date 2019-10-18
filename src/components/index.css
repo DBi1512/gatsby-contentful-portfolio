@@ -45,6 +45,7 @@ body {
 }
 
 /* ====== Global ====== */
+
 a {
     margin: 0;
     padding: 0;
@@ -306,32 +307,15 @@ img {
     height: 100vh;
 }
 
-/* .introduction-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    width: 40vw;
-    color: #ffffff;
-    background-color: hsla(0, 0%, 0%, 0.2);
-}
-
-.introduction-text {
-    font-size: 1.2em;
-    text-align: left;
-}
-
-.introduction-description {
-    font-size: 2em;
-} */
-
 /* ====== About ====== */
+
+/* #about {
+    margin-top: -22px;
+} */
 
 .about-information {
     padding: 60px 20px 60px 20px;
-    /* background-color: white; */
     width: 100%;
-    /* margin: 0 auto; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -378,7 +362,7 @@ img {
 
 .Skill-text {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
 .skill-icon {
@@ -400,7 +384,6 @@ img {
 .project {
     text-align: center;
     flex: 1 0 30%;
-    /* max-width: 500px; */
     min-width: 340px;
     max-height: 500px;
     min-height: 200px;
@@ -452,7 +435,6 @@ img {
 
 .project img {
     width: 100%;
-    /* min-width: 340px; */
     border-radius: 5px;
     margin-bottom: 1vh;
 }
@@ -485,7 +467,6 @@ img {
     border-radius: 5px;
     font-size: 15px;
     text-decoration: none;
-    /* margin-top: 10px; */
     margin-left: 10px;
     box-shadow: 3px 6px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
@@ -666,11 +647,6 @@ footer {
         width: 95%;
     }
 
-    /* .my-projects {
-        flex-direction: column;
-        padding-bottom: 0;
-    } */
-
     .project-detail {
         width: 100%;
         margin-bottom: 60px;
@@ -743,8 +719,7 @@ footer {
         height: 3em;
     }
 
-    /* .personal-information,
-    .comment-area {
-        margin-left: 10px;
-    } */
+    .scroll-to-top {
+        right: 45%;
+    }
 }

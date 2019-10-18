@@ -1,7 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
-import "./Projects.css";
 import Html5Icon from "../images/html5.svg";
 import JsxIcon from "../images/jsx.svg";
 import Css3Icon from "../images/css3.svg";

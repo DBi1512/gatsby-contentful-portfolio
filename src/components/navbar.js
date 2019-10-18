@@ -1,36 +1,28 @@
 /* eslint-disable react/jsx-indent-props */
 import React from "react";
 import ReactResizeDetector from "react-resize-detector";
-
-import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import MailIcon from "@material-ui/icons/Mail";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-
-import { Button, MenuItem } from "@material-ui/core";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import PersonIcon from "@material-ui/icons/Person";
-import VpnKeyIcon from '@material-ui/icons/VpnKey';
+import VpnKeyIcon from "@material-ui/icons/VpnKey";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import ContactsIcon from "@material-ui/icons/Contacts";
 import LinkedInIcon from "../images/linkedin.svg";
 import GithubIcon from "../images/github-1.svg";
-
-import ToolbarMenu from "./ToolbarMenu";
 import "./navbar.css";
 
 const drawerWidth = 200;
@@ -92,7 +84,7 @@ function ResponsiveDrawer(props) {
 
     const HandleWindowResize = () => {
         if (typeof window !== "undefined" && window.matchMedia("(max-width: 600px)").matches) {
-            setOffset(75);
+            setOffset(64);
         } else {
             setOffset(0);
         }
@@ -108,23 +100,23 @@ function ResponsiveDrawer(props) {
 
     const drawer = (
         <div>
-            <a href="#" className={classes.toolbar} onClick={handleDrawerClose}>
-                <div className="Navbar-side">
+            <button type="button" className={(classes.toolbar, "Navbar-side")} onClick={handleDrawerClose}>
+                <a href="#top">
                     <h1 className="Navbar-title">
                         Dean
                         {" "}
                         <br />
                         {" "}
-                        Phan
+Phan
                     </h1>
                     <h5 className="Navbar-subtitle">Front-end Developer</h5>
-                </div>
-            </a>
+                </a>
+            </button>
 
             <Divider />
 
             <ReactResizeDetector handleWidth onResize={HandleWindowResize} refreshMode="throttle" refreshRate={100}>
-                <AnchorLink offset={offset} href="#about" onClick={handleDrawerClose}>
+                <AnchorLink key="about" offset={offset} href="#about" onClick={handleDrawerClose}>
                     <List>
                         <ListItem button className="Navbar-item Red-hover">
                             <ListItemIcon>
@@ -137,7 +129,7 @@ function ResponsiveDrawer(props) {
                     </List>
                 </AnchorLink>
 
-                <AnchorLink offset={offset} href="#skills" onClick={handleDrawerClose}>
+                <AnchorLink key="skills" offset={offset} href="#skills" onClick={handleDrawerClose}>
                     <List>
                         <ListItem button className="Navbar-item Green-hover">
                             <ListItemIcon>
@@ -150,7 +142,7 @@ function ResponsiveDrawer(props) {
                     </List>
                 </AnchorLink>
 
-                <AnchorLink offset={offset} href="#projects" onClick={handleDrawerClose}>
+                <AnchorLink key="projects" offset={offset} href="#projects" onClick={handleDrawerClose}>
                     <List>
                         <ListItem button className="Navbar-item Blue-hover">
                             <ListItemIcon>
@@ -163,7 +155,7 @@ function ResponsiveDrawer(props) {
                     </List>
                 </AnchorLink>
 
-                <AnchorLink offset={offset} href="#contact" onClick={handleDrawerClose}>
+                <AnchorLink key="contact" offset={offset} href="#contact" onClick={handleDrawerClose}>
                     <List>
                         <ListItem button className="Navbar-item Purple-hover">
                             <ListItemIcon>
@@ -176,14 +168,24 @@ function ResponsiveDrawer(props) {
                     </List>
                 </AnchorLink>
 
-                <Divider />
+                <Divider key="divider" />
 
-                <div className="Contact-icons">
-                    <a href="https://www.linkedin.com/in/dbi1512/" target="_blank" className="Icon-link">
+                <div key="contact-icons" className="Contact-icons">
+                    <a
+                        href="https://www.linkedin.com/in/dbi1512/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="Icon-link"
+                    >
                         <img src={LinkedInIcon} alt="icon" className="Contact-icon" />
                     </a>
 
-                    <a href="https://github.com/DBi1512" target="_blank" className="Icon-link">
+                    <a
+                        href="https://github.com/DBi1512"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="Icon-link"
+                    >
                         <img src={GithubIcon} alt="icon" className="Contact-icon" />
                     </a>
                 </div>
@@ -247,13 +249,5 @@ function ResponsiveDrawer(props) {
         </div>
     );
 }
-
-ResponsiveDrawer.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    container: PropTypes.instanceOf(typeof Element === "undefined" ? Object : Element),
-};
 
 export default ResponsiveDrawer;

@@ -114,7 +114,7 @@ const Skills = () => (
                 </div>
                 <div className="Skill-item">
                     <img src={NodeJsIcon} className="skill-icon" alt="skill" />
-                    <p className="Skill-text">Node Js</p>
+                    <p className="Skill-text">NodeJs</p>
                 </div>
             </div>
         </div>
