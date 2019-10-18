@@ -15,6 +15,7 @@ import GraphQLIcon from "../images/graphql.svg";
 import GithubIcon from "../images/github-1.svg";
 import ContentfulIcon from "../images/contentful.svg";
 import WordpressIcon from "../images/wordpress-icon.svg";
+import PhpIcon from "../images/php-icon.svg";
 import HerokuIcon from "../images/heroku.svg";
 import NodeJsIcon from "../images/nodejs-1.svg";
 
@@ -67,13 +68,13 @@ const Projects = () => {
     `);
 
     return (
-        <section id="projects" className="Section-container">
+        <section id="projects" className="Section-container" href="#projects">
             <div className="Section-title">
                 <h1 className="Section-title-text">Projects</h1>
             </div>
 
             <div className="my-projects">
-                
+
                 <div className="project">
                     <div className="project-detail">
                         <div className="front">
@@ -94,7 +95,12 @@ const Projects = () => {
                                     <img src={GraphQLIcon} alt="icon" className="icons" />
                                 </div>
                                 <div className="project-buttons">
-                                    <a className="website-button" href="https://ttu-develop.netlify.com/">
+                                    <a
+                                        className="website-button"
+                                        href="https://ttu-develop.netlify.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                     Demo
                                     </a>
                                 </div>
@@ -124,10 +130,20 @@ const Projects = () => {
                                     <img src={MongoDBIcon} alt="icon" className="icons mongodb-icon" />
                                 </div>
                                 <div className="project-buttons">
-                                    <a className="website-button" href="https://github.com/DBi1512/demo-day">
+                                    <a
+                                        className="website-button"
+                                        href="https://github.com/DBi1512/demo-day"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         Github
                                     </a>
-                                    <a className="website-button" href="https://finlary.netlify.com/">
+                                    <a
+                                        className="website-button"
+                                        href="https://finlary.netlify.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         Demo
                                     </a>
                                 </div>
@@ -135,7 +151,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="project">
                     <div className="project-detail">
                         <div className="front">
@@ -146,11 +162,20 @@ const Projects = () => {
                         <div className="overlay">
                             <div className="Card-wrapper">
                                 <p>Learning how to use localhost to store data</p>
+                                <div className="project-skills">
+                                    <img src={Html5Icon} alt="icon" className="icons" />
+                                    <img src={Css3Icon} alt="icon" className="icons" />
+                                    <img src={Javascript} alt="icon" className="icons" />
+                                </div>
                                 <div className="project-buttons">
-                                    <a className="website-button" href="https://github.com/DBi1512/Account-Balance">
+                                    <a className="website-button" href="https://github.com/DBi1512/Account-Balance"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
                                         Github
                                     </a>
-                                    <a className="website-button" href="https://dbi1512.github.io/Account-Balance/">
+                                    <a className="website-button" href="https://dbi1512.github.io/Account-Balance/"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
                                         Demo
                                     </a>
                                 </div>
@@ -168,11 +193,20 @@ const Projects = () => {
                         <div className="overlay">
                             <div className="Card-wrapper">
                                 <p>RestAPI showing all the countries in the World. Learning Array Object.</p>
+                                <div className="project-skills">
+                                    <img src={Html5Icon} alt="icon" className="icons" />
+                                    <img src={Css3Icon} alt="icon" className="icons" />
+                                    <img src={Javascript} alt="icon" className="icons" />
+                                </div>
                                 <div className="project-buttons">
-                                    <a className="website-button" href="https://github.com/DBi1512/Array-Countries-Object">
+                                    <a className="website-button" href="https://github.com/DBi1512/Array-Countries-Object"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
                                         Github
                                     </a>
-                                    <a className="website-button" href="https://dbi1512.github.io/Array-Countries-Object/">
+                                    <a className="website-button" href="https://dbi1512.github.io/Array-Countries-Object/"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
                                         Demo
                                     </a>
                                 </div>
@@ -193,11 +227,22 @@ const Projects = () => {
                                     This unfinished website is a different direction before I joined Integrify. From which I
                                     learned Wordpress and basic PHP.
                                 </p>
+                                <div className="project-skills">
+                                    <img src={Html5Icon} alt="icon" className="icons" />
+                                    <img src={Css3Icon} alt="icon" className="icons" />
+                                    <img src={WordpressIcon} alt="icon" className="icons" />
+                                    <img src={PhpIcon} alt="icon" className="icons" />
+                                </div>
                                 <div className="project-buttons">
-                                    <a className="website-button" href="https://github.com/DBi1512/wayneTheDealer">
+                                    <a className="website-button" href="https://github.com/DBi1512/wayneTheDealer"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
                                         Github
                                     </a>
-                                    <a className="website-button" href="https://dbi1512.github.io/wayneTheDealer/index.html">
+                                    <a className="website-button" 
+                                    href="https://dbi1512.github.io/wayneTheDealer/index.html"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
                                         Demo
                                     </a>
                                 </div>
@@ -215,7 +260,11 @@ const Projects = () => {
                         <div className="overlay">
                             <div className="Card-wrapper">
                                 <p className="para">
-                                    This is my first ever made website based on the real website after learning how to code. <br /><strong>Skills: </strong>HTML, CSS
+                                    This is my first ever made website based on the real website after learning how to code.
+                                    {" "}
+                                    <br />
+                                    <strong>Skills: </strong>
+HTML, CSS
                                 </p>
                                 <div className="project-skills">
                                     <img src={Html5Icon} alt="icon" className="icons" />
@@ -225,12 +274,16 @@ const Projects = () => {
                                     <a
                                         className="website-button"
                                         href="https://github.com/DBi1512/PracticeAquariumZen.github.io"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         Github
                                     </a>
                                     <a
                                         className="website-button"
                                         href="https://dbi1512.github.io/PracticeAquariumZen.github.io/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         Demo
                                     </a>

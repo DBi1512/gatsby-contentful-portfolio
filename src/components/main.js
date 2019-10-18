@@ -46,9 +46,11 @@ const Main = () => {
     return (
         <BackgroundImage Tag="section" id="test" fluid={imageData} style={Styles}>
             {position > 1 ? (
-                <a href="#top" className="anchor scroll-to-top">
-                    <ExpandLessIcon className="arrow" />
-                </a>
+                <button type="button" className="anchor scroll-to-top">
+                    <a href="#top">
+                        <ExpandLessIcon className="arrow" />
+                    </a>
+                </button>
             ) : null}
             <About />
             <Skills />

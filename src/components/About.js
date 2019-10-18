@@ -1,7 +1,7 @@
 import React from "react";
 
 const About = () => (
-    <section id="about" className="Section-container">
+    <section id="about" className="Section-container" href="#about">
         <div className="Section-title">
             <h1 className="Section-title-text">About</h1>
         </div>
@@ -10,9 +10,8 @@ const About = () => (
             <p>I am a Front-End Developer. I'm learning Back-End to become a Full-Stack.</p>
             <br />
             <p>
-                My background with Music and Art together with my understanding of Marketing make a strong impact with
-                my new-found passion in development. My experience with business management together with my positive
-                attitude will make me a solid part of your team.
+                My background with Music and Art together with my understanding of Business Management and Marketing
+                make a strong impact with my new-found passion in development.
             </p>
         </div>
     </section>
